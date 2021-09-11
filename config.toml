@@ -1,0 +1,31 @@
+[Server]
+Host = ""
+Port = 8999
+RunMode = "dev"
+AppName = "GoBpFrame"
+PasswordSalt = "2f7df13e-3f02-4941-ac64-5f8dab1da8b9"
+
+MaxBodyBytes = 20971520 #20M
+MaxHeaderBytes = 1048576 #1M
+TokenMaxAgeInSec = 7200 
+
+[Swagger]
+ApiHost = ""
+
+[Logger]
+Level = "all"
+Stdout = true
+NoColor = true
+
+[Database]
+Port = 5432
+Host = "127.0.0.1"
+DBName = "go_bp_frame"
+SslMode = false
+Username = "postgres"
+Password = "123456"
+TimeZone = "Asia/Shanghai"
+[Database.ConnectPool]
+MaxIdleConns = 3
+MaxOpenConns = 20
+MaxConnLifetimeInMinutes = 30
